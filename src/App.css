@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  flex: True;
 }
 
 .App-logo {
@@ -24,6 +25,12 @@
   color: white;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-img {
+    flex-direction: column;
+    margin: 20px;
+  }
+}
 .App-link {
   color: #61dafb;
 }
