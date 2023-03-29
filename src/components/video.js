@@ -1,5 +1,5 @@
 
-function Video({video}) {
+function Video({ video }) {
     return (
         <div>
             <Thumbnail video={video} />
@@ -11,7 +11,7 @@ function Video({video}) {
     )
 }
 
-function VideoList({videos, emptyHeading}) {
+function VideoList({ videos, emptyHeading }) {
     const count = videos.length;
     let heading = emptyHeading;
 
@@ -23,7 +23,7 @@ function VideoList({videos, emptyHeading}) {
     return (
         <section>
             <h2>{heading}</h2>
-            {videos.map(video => 
+            {videos.map(video =>
                 <Video key={video.id} video={video} />
             )}
         </section>

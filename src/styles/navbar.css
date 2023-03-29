@@ -1,0 +1,109 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  position: relative;
+  color: black;
+  /*box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);*/
+}
+
+.sitetitel {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+/* list of link elements */
+.navbar ul {
+  display: grid;
+  gap: 1rem;
+  padding: 0%;
+  grid-auto-flow: column;
+  margin-right: 2rem;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
+
+/* hidden bold element in bg to preserve location */
+.navbar a::after {
+  display: block;
+  content: attr(name);
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  font-weight: bold;
+}
+
+/* mediaquery navbar ul at x_width */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    grid-auto-flow: row;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    gap: 0;
+    top: 5rem;
+    background-color: white;
+    width: 100%;
+    border-top: 1px solid black;
+    display: none;
+  }
+
+  .navbar.expanded ul {
+    display: grid;
+  }
+
+  .navbar li {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .navbar li:hover {
+    background-color: lightcyan;
+    font-weight: bold;
+  }
+}
+
+.hamburger {
+  border: 0;
+  height: 35px;
+  width: 35px;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hamburger:hover {
+  background-color: darkcyan;
+}
+
+.navbar.expanded .hamburger {
+  background-color: darkcyan;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
