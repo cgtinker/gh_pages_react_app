@@ -1,34 +1,22 @@
 .card {
-  border: 1px solid black;
-  height: 300px;
-  margin-top: 180px;
-  width: 180px;
-  float:left;
-  background-color: white;
-  margin-left: 32px;
-  border-radius: 10px;
+    position: flex;
+    margin: 2rem;
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
-.card-body {
-  margin-top: 16px;
-  width: 100px;
-  padding-right: 20px;
-  margin-right: 20px;
-  padding-left: 20px;
-}
+.card h1 {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    font-size: 5rem;
 
-.card-body > img {
-  position: relative;
-  height: 80px;
-  width: 150px;
-  animation: app-logo-spin infinite 2s linear;
-}
-
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359def);
-  }
+    background-color: red;
+    justify-content: center;
+    align-items: center;
 }

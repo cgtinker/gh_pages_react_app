@@ -1,0 +1,15 @@
+.footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    background: black;
+    height: 5rem;
+}
+
+.footer p {
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+}

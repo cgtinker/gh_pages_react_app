@@ -1,15 +1,16 @@
 import { useState } from "react";
 import "../style.css";
+import Card from  "../components/card.js";
 
 
 export default function Home() {
-    const [youtubeID] = useState('J5_rBMLCv24')
+    const [cards, setCards] = useState(["A", "B", "C"]);
+
     return <div>
-        <h1>Home</h1>
-        <iframe className='video'
-            title='Youtube player'
-            sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-            src={`https://youtube.com/embed/${youtubeID}?autoplay=0`}>
-        </iframe>
-    </div>
+        <h1>Playing with Cards</h1>
+        <div className="cardContainer">
+        <Card 
+        ></Card>
+        </div>
+        </div>
 }
