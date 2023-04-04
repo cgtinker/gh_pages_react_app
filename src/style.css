@@ -45,13 +45,27 @@ p {
   height: 100%;
 }
 
-.container {
-  flex-wrap: wrap;
-  align-items: center;
+
+/* THREE */
+.canvas {
+    position: center;
+    /* background-color: red; */
 }
 
-.cardContainer {
+.canvasWrapper {
+    height: 50vh;
+    z-index: -0;
+}
+
+/* FRAMER */
+.animationContainer {
+  margin: 12rem;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  color: black;
+}
+
+.video {
+  margin: 3rem;
 }

@@ -6,15 +6,15 @@ import * as THREE from "three";
 
 
 const DisplacementShaderMaterial = shaderMaterial(
-    // uniform
-    {
-        uTime: 0,
-        uObjectColor: new THREE.Color(1.0, 0.3, 0.3),
-        uLightPos: new THREE.Vector3(0.0, 2.0, 5.0),
-        uLightColor: new THREE.Color(0.3, 0.3, 1.0),
-    },
-    // vertexshader
-    glsl`
+  // uniform
+  {
+    uTime: 0,
+    uObjectColor: new THREE.Color(1.0, 0.3, 0.3),
+    uLightPos: new THREE.Vector3(0.0, 2.0, 5.0),
+    uLightColor: new THREE.Color(0.3, 0.3, 1.0),
+  },
+  // vertexshader
+  glsl`
         precision mediump float;
         uniform float uTime;
 
@@ -47,8 +47,8 @@ const DisplacementShaderMaterial = shaderMaterial(
             gl_Position = projectionMatrix * modelViewMatrix * vec4(vpos, 1.0);;
         }
     `,
-    // fragmentshader
-    glsl`
+  // fragmentshader
+  glsl`
         precision mediump float;
         uniform float uTime;
         uniform vec3 uObjectColor;
@@ -79,13 +79,13 @@ const DisplacementShaderMaterial = shaderMaterial(
 extend({ DisplacementShaderMaterial });
 
 export default function Sphere() {
-    const ref = useRef();
-    
-    useFrame(({clock}) => (ref.current.uTime = clock.getElapsedTime()));
-    return (
-        <mesh rotation={[0, 0, 0]}>
-            <sphereBufferGeometry attach="geometry" args={[1.5, 32, 32]} / >
-            <displacementShaderMaterial ref = {ref}  / >
-        </mesh>
-    );
+  const ref = useRef();
+
+  useFrame(({ clock }) => (ref.current.uTime = clock.getElapsedTime()));
+  return (
+    <mesh rotation={[0, 0, 0]}>
+      <sphereBufferGeometry attach="geometry" args={[1.75, 32, 32]} />
+      <displacementShaderMaterial ref={ref} />
+    </mesh>
+  );
 }
