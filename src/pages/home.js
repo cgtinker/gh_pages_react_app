@@ -47,8 +47,8 @@ export default function Home() {
       </iframe>
 
       <p>
-        While many ppl on YT recommend 'Framer' for UX & UI I'm not sure it's needed.<br></br>
-        It's powerful, but doesn't seem very useful when it comes to 3D.
+        So here a suzanne which rotates based on scrolling.
+        Based on react/three/drei.
       </p>
 
       <div className="canvasWrapper">
@@ -61,8 +61,8 @@ export default function Home() {
       </div >
 
       <p>
-        Lets see how stuff goes along in Vue & Angular.<br></br>
-        So far React seems to be quiet nice to to react-three.
+        While many ppl on YT recommend 'Framer' for UX & UI I'm not sure it's needed.<br></br>
+        It's powerful, but doesn't seem very useful when it comes to 3D.
       </p>
     </>
   );

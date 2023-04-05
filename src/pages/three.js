@@ -27,6 +27,7 @@ export default function Three() {
       <p>
         3D Objects can be imported via 'drei' as .gltf or .glb –<br />
         .fbx and .obj data may be loaded using 'three/examples/jsm/loaders'.
+        The shadow and spring drag effect is quiet cool.
       </p>
 
       <div className='canvasWrapper'>
