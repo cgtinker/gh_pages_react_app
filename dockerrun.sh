@@ -1,3 +1,4 @@
+# starts interactive docker shell
 docker run \
   -it \
   --rm \
@@ -5,5 +6,6 @@ docker run \
   -v /src/node_modules \
   -p 3000:3000 \
   -e CHOKIDAR_USEPOLLING=true \
-  gh-react-three:dev
-
+  --name ghpg \
+  gh-react-three:dev \
+  sh

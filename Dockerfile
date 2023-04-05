@@ -17,4 +17,3 @@ RUN npm install three@0.141.0 @react-three/cannon@6.3.0 @react-three/drei@9.14.3
 RUN npm install glslify babel-plugin-glsl glsl-noise
 
 COPY . ./
-CMD ["npm", "start"]
