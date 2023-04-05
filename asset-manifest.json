@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gh_pages_react_app/static/css/main.6b09a402.css",
-    "main.js": "/gh_pages_react_app/static/js/main.6766854e.js",
+    "main.js": "/gh_pages_react_app/static/js/main.d1d4ddba.js",
     "static/media/suzanne.gltf": "/gh_pages_react_app/static/media/suzanne.0a3bfc28eee830db2fc5.gltf",
     "index.html": "/gh_pages_react_app/index.html",
     "main.6b09a402.css.map": "/gh_pages_react_app/static/css/main.6b09a402.css.map",
-    "main.6766854e.js.map": "/gh_pages_react_app/static/js/main.6766854e.js.map"
+    "main.d1d4ddba.js.map": "/gh_pages_react_app/static/js/main.d1d4ddba.js.map"
   },
   "entrypoints": [
     "static/css/main.6b09a402.css",
-    "static/js/main.6766854e.js"
+    "static/js/main.d1d4ddba.js"
   ]
 }
