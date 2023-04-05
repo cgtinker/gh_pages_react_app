@@ -9,7 +9,7 @@ function NavLink({ href, site, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   // hacky nav bar - lets go! 
-  if (href === "/") {
+  if (href === "/gh_pages_react_app") {
     return null;
   }
 
