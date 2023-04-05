@@ -12,10 +12,10 @@ Mainly playing around, don't rely on any of this.
 
 
 ### deploy docs: gh-pages
-While this could be simplified, the goal has been to deploy 
+While this could be improved a lot and simplified, the goal has been to deploy 
 everything inside a docker container.
-There is a gh-pages plugin (which I could probably remove now)
-but it cannot easily be used inside docker.
+There is a gh-pages plugin but it cannot easily be used inside docker.
+Most likly it can be removed by now and just use 'npm run build' instead of 'predeploy'.
 
 Initial worktree setup:
 ```
@@ -25,17 +25,15 @@ Generic: (`$ git worktree add <directory-name> <branch-name>`)
 
 Start the docker container (interactive container, use npm start for the default localhost workflow)
 ```
-$./dockerrun.sh (start container )
+$./dockerrun.sh (start container)
 ```
 
-Copy and push to git
+Deploy and push to git
 ```
-# copies gh pages
+# deploy gh pages - interactive shell directly copies (modfiy for custom run cmd)
 $./dockercpghpgs.sh
 
-# consider to exit the docker
-$exit (inside container)
-
-$cd build
 # standart git workflow (add / commit / push)
+$cd build
+$git ...
 ```
