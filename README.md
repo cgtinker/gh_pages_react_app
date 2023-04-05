@@ -23,10 +23,9 @@ $ git worktree add build gh-pages --no-checkout
 Generic: (`$ git worktree add <directory-name> <branch-name>`)
 ```
 
-Start the docker container and deploy
+Start the docker container (interactive container, use npm start for the default localhost workflow)
 ```
 $./dockerrun.sh (start container )
-$npm run predeploy (within the container)
 ```
 
 Copy and push to git
